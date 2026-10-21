@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141D30"/>
+      <stop offset="100%" stop-color="#090E1A"/>
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#BFEC4E"/>
+      <stop offset="100%" stop-color="#D4FF63"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9275FF"/>
+      <stop offset="100%" stop-color="#B19BFF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Night Blue Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle border highlight -->
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#222F4A" stroke-width="4"/>
+
+  <!-- Ascending Geometric Letter A Mark (Symbolizing Advancement / Projeção Ascendente) -->
+  <g transform="translate(0, 8)">
+    <!-- Base Chevron / Ascending Horizon Beam in Violet -->
+    <path d="M 160 350 L 352 350 L 324 316 L 188 316 Z" fill="url(#violetGrad)" opacity="0.95"/>
+    
+    <!-- Bold Geometric "A" Apex and Legs in Lime Green -->
+    <path d="M 256 96 L 396 384 L 328 384 L 256 232 L 184 384 L 116 384 Z" fill="url(#limeGrad)"/>
+    
+    <!-- Top Apex Inner Light Geometry -->
+    <polygon points="256,132 284,204 228,204" fill="#090E1A"/>
+  </g>
+</svg>

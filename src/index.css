@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #090E1A;
+    --surface: #141D30;
+    --surface-elevated: #1D2940;
+    --brand-action: #D4FF63;
+    --brand-action-hover: #BFEC4E;
+    --brand-accent: #9275FF;
+    --text-primary: #F5F7FC;
+    --text-secondary: #B4BFD2;
+    --status-success: #65D6A4;
+    --status-alert: #FFD080;
+    --border-subtle: #222F4A;
+    --border-focus: #2C3C5C;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior-y: none;
+  }
+}
+
+/* Tabular figures for all numerals */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090E1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #222F4A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2C3C5C;
+}
+
+/* Touch target accessibility helper */
+.min-touch-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* Mobile safe areas */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 16px);
+}
