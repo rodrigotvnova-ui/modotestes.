@@ -1,0 +1,6 @@
+{
+  "name": "Modo Avanço",
+  "description": "Transforme objetivos em ações diárias por meio de uma jornada de 21 dias, acompanhamento de hábitos, diagnóstico pessoal e sessões de foco.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
